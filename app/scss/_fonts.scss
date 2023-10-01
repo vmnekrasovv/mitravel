@@ -1,0 +1,24 @@
+@mixin font($fname, $fstyle, $fweight, $furl) {
+	@font-face {
+		font-family: $fname;
+		font-style: $fstyle;
+		font-weight: $fweight;
+		// font-display: swap // Uncomment to initially display system fonts
+		src: local($fname), url($furl) format('woff2');
+		font-display: optional;
+	}
+}
+
+
+@include font('HelveticaNeue', normal, 700, '../fonts/HelveticaNeue/HelveticaNeue-Bold.woff2');
+
+@include font('SFCompactText', normal, 200, '../fonts/SFCompactText/SFCompactText-Light.woff2');
+@include font('SFCompactText', normal, 400, '../fonts/SFCompactText/SFCompactText-Regular.woff2');
+
+@include font('SFProDisplay', normal, 400, '../fonts/SFProDisplay/SFProDisplay-Regular.woff2');
+@include font('SFProDisplay', normal, 500, '../fonts/SFProDisplay/SFProDisplay-Medium.woff2');
+@include font('SFProDisplay', normal, 600, '../fonts/SFProDisplay/SFProDisplay-Semibold.woff2');
+@include font('SFProDisplay', normal, 700, '../fonts/SFProDisplay/SFProDisplay-Bold.woff2');
+@include font('SFProDisplay', normal, 900, '../fonts/SFProDisplay/SFProDisplay-Heavy.woff2');
+
+@include font('SFProText', normal, 400, '../fonts/SFProText/SFProText-Regular.woff2');
