@@ -3,10 +3,11 @@
 
 		$('.burger').append("<span class='burger__element'></span>");
 
-		let btn = $('.burger, .header-menu');
+		let btn = $('.burger');
 
 		btn.click(function(){
 			btn.toggleClass('active');
+			$('.header-menu').toggleClass('active');
 			$('body').toggleClass('lock');
 		});
 
