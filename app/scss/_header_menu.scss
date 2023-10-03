@@ -1,7 +1,7 @@
 .header-menu {
 
 	width: 100%;
-	height: 130px;
+	height: 100px;
 	position: fixed;
 	left: 0;
 	top: -110vh;
@@ -10,23 +10,43 @@
     transition: .3s;
     z-index: 2;
 
-    @media screen and (max-width: 767px) {
+  
+    @media screen and (min-width: 770px) {
+    	height: 130px;
+    }
+
+    @media screen and (max-width: 769px) {
 		height: 110vh;
 	}
 
 	&.active {
-		animation: 1s headerMenuBasic forwards;
+		
+    	@media screen and (max-width: 769px) {
+	    	animation: .3s headerMenuBasic forwards;
+		}
+
+		@media screen and (min-width: 770px) {
+	    	animation: .3s headerMenuBasicLarge forwards;
+		}
 	}
 
     body.top-line-fixed & {
     	position: fixed;
 
-    	@media screen and (max-width: 767px) {
-	    	height: calc(110vh - 130px);
+    	@media screen and (min-width: 770px) {
+	    	height: 100px;
+		}
+
+    	@media screen and (max-width: 769px) {
+	    	height: calc(110vh - 100px);
 		}
 
 		&.active {
-			animation: 1s headerMenuFixed forwards;
+			animation: .3s headerMenuFixed forwards;
+
+			@media screen and (min-width: 770px) {
+				animation: .3s headerMenuFixedLarge forwards;
+			}
 		}
     }
 
@@ -39,8 +59,9 @@
 		align-items: center;
 		justify-content: center;
 
-		@media screen and (max-width: 767px) {
+		@media screen and (max-width: 769px) {
 			flex-direction: column;
+			height: calc(100vh - 100px);
 		}
 	}
 	
@@ -52,6 +73,8 @@
 		font-family: 'SFProText';
 		font-weight: 400;
 		transition: .3s color;
+		width: 17%;
+    	text-align: center;
 
 		&:hover {
 			color: #73AFBA;
@@ -61,23 +84,23 @@
 			color: #45c9e1;
 		}
 
-		@media screen and (max-width: 767px) {
+		@media screen and (max-width: 769px) {
 			color: #fff;
 			font-size: 20px;
 			width: 100%;
 		    text-align: center;
 		    border-bottom: 1px solid #333;
-		    padding-bottom: 30px;
+		    padding: 30px;
 		}
 
-		@media screen and (min-width: 768px) and (max-width: 990px) {
+		@media screen and (min-width: 770px) and (max-width: 990px) {
 			padding: 20px 15px;
 		}
 		
 
 		&:last-child {
 
-			@media screen and (max-width: 767px) {
+			@media screen and (max-width: 769px) {
 				border-bottom: none;
 			}
 		} // header-menu__link:last-child
@@ -89,17 +112,37 @@
 
 @keyframes headerMenuBasic {
 	0% {
-		top: -110vh;
+		top: -30vh;
 	}
 
 	100% {
-		top: 0px;
+		top: 100px;
+	}
+}
+
+@keyframes headerMenuBasicLarge {
+	0% {
+		top: -30vh;
+	}
+
+	100% {
+		top: 130px;
 	}
 }
 
 @keyframes headerMenuFixed {
 	0% {
-		top: -110vh;
+		top: -30vh;
+	}
+
+	100% {
+		top: 100px;
+	}
+}
+
+@keyframes headerMenuFixedLarge {
+	0% {
+		top: -30vh;
 	}
 
 	100% {

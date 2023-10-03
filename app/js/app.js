@@ -24,6 +24,10 @@
 			}
 		});
 
+		$('.header-menu__link').on('click', function(){
+			$(this).addClass('active').siblings().removeClass('active');
+		});
+
 
 		$('.header').parallax({
 			imageSrc: 'images/dest/header_bg.jpg',
