@@ -16,6 +16,11 @@
 			} else {
 				$('.top-line').removeClass('fixed');
 				$('body').removeClass('top-line-fixed');
+
+				$('.header-menu').removeClass('active');
+				$('.burger').removeClass('active');
+				$('body').removeClass('lock');
+				
 			}
 		});
 
