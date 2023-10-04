@@ -17,7 +17,7 @@ html, body {
 body.lock {
 	overflow: hidden;
 
-	@media screen and (min-width: 768px) {
+	@media screen and (min-width: 770px) {
 		overflow: auto;
 	}
 }
