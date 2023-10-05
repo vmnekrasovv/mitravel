@@ -33,6 +33,24 @@
 			imageSrc: 'images/dest/header_bg.jpg',
 			speed: .7,
 		});
+
+
+		var controls = {
+	        video: $(".header-video__video"),
+	        playpause: $(".header-video__play-pause")                 
+	    };
+
+	    var video = controls.video[0];
+	               
+	    controls.playpause.click(function(){
+	        if (video.paused) {
+	            video.play();  
+	        } else {
+	            video.pause();
+	        }
+	                
+	        $(this).toggleClass("pause"); 
+	    });
 		
 	});
 })(jQuery);
