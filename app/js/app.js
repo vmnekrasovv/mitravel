@@ -51,6 +51,13 @@
 	                
 	        $(this).toggleClass("pause"); 
 	    });
+
+
+	    /*setTimeout(function(){
+	    	$('.header-video__top').html(`
+	    		<iframe width="100%" height="100%" src="https://www.youtube.com/embed/7RGDc9AFI2k?mute=1"></iframe>
+	    	`);
+	    }, 2000);*/
 		
 	});
 })(jQuery);

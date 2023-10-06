@@ -17,15 +17,15 @@
 	&.active {
 		
     	@media screen and (max-width: 769px) {
-	    	animation: .4s headerMenuTop100 ease-out forwards;
+	    	animation: .2s headerMenuTop100 forwards;
 		}
 
 		@media screen and (min-width: 770px) {
-	    	animation: .4s headerMenuTop130 ease-out forwards;
+	    	animation: .2s headerMenuTop130 forwards;
 		}
 
 		body.top-line-fixed & {
-	    	animation: .4s headerMenuTop100 ease-out forwards;
+	    	animation: .2s headerMenuTop100 forwards;
 		}
 	}
 
