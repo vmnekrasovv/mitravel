@@ -1,3 +1,154 @@
 .s2 {
+	position: relative;
+	min-height: 100vh;
+	background-image: url('../images/dest/section_2/1.jpg');
+	background-repeat: no-repeat;
+
+	.container {
+		padding-top: 600px;
+		padding-bottom: 100px;
+	}
+
+	&__button_top {
+		display: inline-block;
+		padding: 18px 30px;
+		margin-bottom: 20px;
+		border-radius: 35px;
+		background: #E8594E;
+
+		font-family: 'SFProDisplay';
+		font-weight: 900;
+		font-size: 11px;
+		letter-spacing: 2px;
+		color: #fff;
+		text-transform: uppercase;
+	}
+
+	&__title {
+
+		max-width: 640px;
+		margin-bottom: 20px;
+
+		font-family: 'SFProDisplay';
+		font-weight: 700;
+		font-size: 48px;
+		line-height: 64px;
+		color: #fff;
+	}
+
+	&__text {
+		max-width: 640px;
+		margin-bottom: 40px;
+
+		font-family: 'SFCompactText';
+		font-weight: 400;
+		font-size: 14px;
+		line-height: 21px;
+		color: #fff;
+	}
+
+	&__button_bot {
+		display: inline-block;
+		padding: 32px 80px;
+		border-radius: 5px;
+		background: #73AFBA;
+
+		font-family: 'SFProDisplay';
+		font-weight: 900;
+		font-size: 12px;
+		letter-spacing: 2px;
+		color: #fff;
+		text-transform: uppercase;
+	}
+
+	&__sidebar {
+		position: absolute;
+		top: 0;
+		right: 0;
+		height: 100%;
+		max-width: 690px;
+		padding: 130px;
+		background: rgba(60, 74, 81, .95);
+
+		@media screen and (max-width: 680px) {
+			position: relative;
+		}
 	
+		&-title {
+			
+			max-width: 370px;
+			margin-bottom: 100px;
+
+			font-family: 'SFProDisplay';
+			font-weight: 700;
+			font-size: 64px;
+			line-height: 80px;
+			color: #fff;
+		}
+	} // sidebar
+
+
+	.stories {
+		margin-bottom: 100px;
+
+		&__list {
+			max-width: 370px;
+			display: flex;
+			flex-direction: column;
+		}
+
+		&__element {
+			display: flex;
+			flex-wrap: wrap;
+			gap: 30px;
+			padding-top: 30px;
+			padding-bottom: 30px;
+
+			border-bottom: 1px solid rgba(99, 99, 99, .7);
+
+			&:first-child {
+				padding-top: 0;
+			}
+
+			&:last-child {
+				border: none;
+			}
+		}
+
+		&__avatar {
+			width: 46px;
+			height: 46px;
+			overflow: hidden;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			border-radius: 100%;
+		
+			&-image {
+				width: 48px;
+				height: 48px;
+			}
+		} 
+
+		&__title {
+
+			max-width: calc(100% - 80px);
+
+			margin-bottom: 10px;
+
+			font-weight: 700;
+			font-size: 18px;
+			line-height: 24px;
+			color: #fff;
+			font-family: 'SFProDisplay';
+		}
+
+		&__date {
+			display: block;
+			font-weight: 400;
+			font-size: 11px;
+			color: #aaa;
+			font-family: 'SFProText';
+		}
+	} // stories
 }
