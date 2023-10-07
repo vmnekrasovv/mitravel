@@ -1,0 +1,98 @@
+.s3 {
+	
+	padding: 150px 0 100px 0;
+
+	&__title {
+		max-width: 770px;
+		margin: 0 auto 25px;
+
+		font-family: 'SFProDisplay';
+		font-weight: 700;
+		font-size: 64px;
+		line-height: 80px;
+		color: #1C2E3D;
+		text-align: center;
+		text-shadow: 1px 1px #aaa;
+	}
+
+	&__text {
+		display: block;
+		max-width: 640px;
+		margin: 0 auto 100px auto;
+
+		font-family: 'SFCompactText';
+		font-weight: 200;
+		font-size: 16px;
+		line-height: 24px;
+		text-align: center;
+		color: #788692;
+	}
+	
+
+	&__video {
+
+		overflow: hidden;
+
+		&-item {
+			position: relative;
+			max-width: 1035px;
+			margin: 0 auto;
+
+			&:before,
+			&:after {
+				display: block;
+				content: '';
+				width: 445px;
+				height: 90%;
+				border-radius: 20px;
+				position: absolute;
+				top: 5%;
+
+				background-repeat: no-repeat;
+				background-size: cover;
+			}
+
+			&:before {
+				left: -475px;
+				background-image: linear-gradient(to bottom, rgba(0,0,0,.2) 15%, rgba(0,0,0,.4) 55% , rgba(0,0,0,.5) 75%, rgba(0,0,0,.7) 100% ), url('../images/dest/section_3/1.jpg');
+				background-position: right center;
+			}
+
+			&:after {
+				right: -475px;
+				background-image: linear-gradient(to bottom, rgba(0,0,0,.2) 15%, rgba(0,0,0,.4) 55% , rgba(0,0,0,.5) 75%, rgba(0,0,0,.7) 100% ), url('../images/dest/section_3/3.jpg');
+				background-position: left center;
+			}
+		}
+
+		&-icon {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			width: 112px;
+			height: 112px;
+			border-radius: 100%;
+			cursor: pointer;
+			background: url('../images/dest/icons/video.svg') no-repeat;
+
+			position: absolute;
+			top: 40px;
+			left: 50px;
+
+		}
+
+		&-title {
+
+			position: absolute;
+			left: 40px;
+			bottom: 40px;
+
+			font-family: 'SFProDisplay';
+			font-weight: 700;
+			font-size: 32px;
+			line-height: 40px;
+			color: #fff;
+			text-shadow: 1px 1px #333;
+		}
+	}
+}
