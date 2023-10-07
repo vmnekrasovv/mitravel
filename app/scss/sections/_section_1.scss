@@ -22,6 +22,7 @@
 		color: #1C2E3D;
 		max-width: 770px;
 		margin-bottom: 100px;
+		text-shadow: 1px 1px #aaa;
 
 		@media screen and (max-width: 1030px) {
 			font-size: 58px;
@@ -93,7 +94,7 @@
 			font-size: 24px;
 			line-height: 31px;
 			letter-spacing: 1px;
-			text-shadow: 1px 1px #2A707C;
+			text-shadow: 1px 1px #333;
 			color: #fff;
 
 			@media screen and (min-width: 992px) and (max-width: 1201px){

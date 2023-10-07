@@ -23,6 +23,7 @@
 		font-size: 80px;
 		line-height: 84px;
 		color: #fff;
+		text-shadow: 2px 2px #333;
 
 		@media screen and (max-width: 576px) {
 			font-size: 60px;
@@ -37,6 +38,7 @@
 		font-weight: 100;
 		font-size: 14px;
 		color: #fff;
+		text-shadow: 1px 1px #111;
 
 		@media screen and (max-width: 1050px) {
 			max-width: 480px;
@@ -63,6 +65,7 @@
 		font-size: 11px;
 		text-align: center;
 		color: #fff;
+		text-shadow: 1px 1px #111;
 	}
 
 	.button-buy {
@@ -76,6 +79,7 @@
 		letter-spacing: 2px;
 		color: #fff;
 		background-color: #E8594E;
+		text-shadow: 1px 1px #111;
 
 		@media screen and (max-width: 1200px) {
 			margin-bottom: 120px;
@@ -266,6 +270,7 @@
 			letter-spacing: 2px;
 			color: #fff;
 			text-transform: uppercase;
+			text-shadow: 1px 1px #333;
 		}
 	}	
 

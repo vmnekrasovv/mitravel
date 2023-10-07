@@ -7,6 +7,10 @@
 	.container {
 		padding-top: 600px;
 		padding-bottom: 100px;
+
+		@media screen and (max-width: 999px) {
+			padding-top: 340px;
+		}
 	}
 
 	&__button_top {
@@ -22,6 +26,7 @@
 		letter-spacing: 2px;
 		color: #fff;
 		text-transform: uppercase;
+		text-shadow: 1px 1px #333;
 	}
 
 	&__title {
@@ -34,6 +39,15 @@
 		font-size: 48px;
 		line-height: 64px;
 		color: #fff;
+		text-shadow: 2px 2px #333;
+
+		@media screen and (max-width: 1248px) {
+			max-width: 460px;
+		}
+
+		@media screen and (max-width: 600px) {
+			max-width: 435px;
+		}
 	}
 
 	&__text {
@@ -45,6 +59,15 @@
 		font-size: 14px;
 		line-height: 21px;
 		color: #fff;
+		text-shadow: 1px 1px #111;
+
+		@media screen and (max-width: 1248px) {
+			max-width: 550px;
+		}
+
+		@media screen and (max-width: 600px) {
+			max-width: 435px;
+		}
 	}
 
 	&__button_bot {
@@ -59,6 +82,7 @@
 		letter-spacing: 2px;
 		color: #fff;
 		text-transform: uppercase;
+		text-shadow: 1px 1px #333;
 	}
 
 	&__sidebar {
@@ -67,13 +91,48 @@
 		right: 0;
 		height: 100%;
 		max-width: 690px;
-		padding: 130px;
+		padding: 130px 170px 130px 130px;
 		background: rgba(60, 74, 81, .95);
 
-		@media screen and (max-width: 680px) {
+		@media screen and (max-width: 999px) {
+			/* top: auto;
+			bottom: 0;
+			left: 0;
+			height: 40%;
+			max-width: 100%; */
+
+			top: 80px;
 			position: relative;
+			max-width: 100%;
+			padding: 50px 170px 20px 130px;
+		}
+
+		@media screen and (max-width: 800px) {
+			padding: 50px 50px 20px 50px;
+		}
+
+		@media screen and (max-width: 600px) {
+			padding: 10px 50px 20px 50px;
+		}
+
+		@media screen and (max-width: 396px) {
+			top: 55px;
+		}
+
+		@media screen and (max-width: 346px) {
+			top: 90px;
+			padding: 10px 20px 20px 30px;
+		}
+
+		@media screen and (min-width: 1250px) and (max-width: 1400px) {
+			padding: 130px 100px 100px 100px;
 		}
 	
+		@media screen and (min-width: 1000px) and (max-width: 1249px) {
+			padding: 100px 70px 100px 80px;
+		}
+	
+
 		&-title {
 			
 			max-width: 370px;
@@ -84,6 +143,36 @@
 			font-size: 64px;
 			line-height: 80px;
 			color: #fff;
+			text-shadow: 2px 2px #333;
+
+			@media screen and (max-width: 999px) {
+				max-width: 100%;
+				margin-bottom: 80px;
+			}
+
+			@media screen and (max-width: 600px) {
+				font-size: 54px;
+			}
+
+			@media screen and (max-width: 520px) {
+				font-size: 40px;
+			}
+
+			@media screen and (max-width: 420px) {
+				font-size: 32px;
+			}
+
+			@media screen and (max-width: 375px) {
+				font-size: 29px;
+			}
+
+			@media screen and (max-width: 346px) {
+				margin-bottom: 70px;
+			}
+
+			@media screen and (min-width: 1000px) and (max-width: 1249px) {
+				max-width: 270px;
+			}
 		}
 	} // sidebar
 
@@ -95,6 +184,14 @@
 			max-width: 370px;
 			display: flex;
 			flex-direction: column;
+
+			@media screen and (max-width: 999px) {
+				max-width: 100%;
+			}
+
+			@media screen and (min-width: 1000px) and (max-width: 1249px) {
+				max-width: 270px;
+			}
 		}
 
 		&__element {
@@ -141,6 +238,7 @@
 			line-height: 24px;
 			color: #fff;
 			font-family: 'SFProDisplay';
+			text-shadow: 1px 1px #333;
 		}
 
 		&__date {
@@ -149,6 +247,7 @@
 			font-size: 11px;
 			color: #aaa;
 			font-family: 'SFProText';
+			text-shadow: 1px 1px #333;
 		}
 	} // stories
 }
