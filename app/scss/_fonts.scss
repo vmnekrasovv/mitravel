@@ -10,6 +10,8 @@
 }
 
 
+@include font('PlayfairDisplay', normal, 400, '../fonts/PlayfairDisplay/PlayfairDisplay-Regular.woff2');
+
 @include font('HelveticaNeue', normal, 700, '../fonts/HelveticaNeue/HelveticaNeue-Bold.woff2');
 
 @include font('SFCompactText', normal, 200, '../fonts/SFCompactText/SFCompactText-Light.woff2');
